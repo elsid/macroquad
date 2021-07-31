@@ -12,9 +12,9 @@ Simple and easy to use graphics library
 readme="README.md"
 
 [features]
-audio = ["quad-snd"]
+#audio = ["quad-snd"]
 log-rs = ["log"]
-default = ["audio"]
+default = []
 
 [package.metadata.android]
 assets = "examples/"
@@ -35,7 +35,7 @@ fontdue = "0.5.0"
 bumpalo = "3.4"
 backtrace = { version = "0.3.60", optional = true, default-features = false, features = [ "std", "libbacktrace" ] }
 log = { version = "0.4", optional = true }
-quad-snd = { version = "0.2", optional = true }
+#quad-snd = { version = "0.2", optional = true }
 
 [dev-dependencies]
 macroquad-particles = { path = "./particles" }
